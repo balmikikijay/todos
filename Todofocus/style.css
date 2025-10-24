@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(234, 207, 171);
+    height: 90vh;
+    margin: 0;
+
+   
+
+}
+.main{
+    position: relative;
+}
+#heading{
+    color: rgba(79, 203, 79, 1);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+     /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+#heading span{
+    color: rgb(85, 85, 62);
+}
+.app-container{
+    background-color: rgb(233, 251, 245);
+    margin-top: 1rem;
+    max-width: 600px;
+    /* max-height: 100px; */
+    margin-inline: auto;
+    border-radius: 15px;
+    padding: 14px 16px;
+    box-shadow: 0 0 3px 1px rgba(193, 183, 203, 1);
+}
+.app-container .para{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: rgba(123, 123, 123, 1);
+}
+
+.progress-bar{
+    background-color: rgba(229, 230, 229, 1);
+    height: 1.5rem;
+    width:  100%;
+    border-radius: 2rem;
+    margin-top: 1rem;
+
+}
+.progress-value{
+    background-color: rgba(53, 216, 53, 1);
+    width: 50%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    /* padding-left: 15px; */
+    overflow: hidden;
+    color:  rgba(238, 246, 238, 1);
+    width: 0;
+}
+.progress-value span{
+    padding-left: 30px;
+}
+.error-label{
+    margin-top: .7rem;
+    color: brown;
+    display: none;
+}
+
+.goal-container{
+    background-color: rgba(230, 236, 230, 1);
+    height: 70px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    /* gap: 1vw; */
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
+    
+   
+}
+.custom-checkbox{
+    height: 24px;
+    width: 24px;
+    border: 2px solid rgba(246, 255, 252, 1);
+    border-radius: 50%;
+    margin-left: 1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.completed  .custom-checkbox{
+    background-color: rgba(53, 216, 53, 1);
+    border-color: rgba(53, 216, 53, 1);
+
+}
+
+.goal-input{
+   height: 100%;
+   width: 80%;
+   padding-left: 14px;
+   border: none;
+   outline: none;
+   border-radius: 1rem;
+   font-size: 1.3rem;
+   color: rgba(169, 147, 147, 1);
+    background-color: rgba(230, 236, 230, 1);
+    flex-grow: 1;
+    align-self: stretch;
+    
+}
+.completed .goal-input{
+    color: rgba(53, 216, 53, 1);
+    text-decoration: line-through;
+}
+.quote{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.end{
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    color: rgb(146, 147, 148);
+}
+@media (max-width:768px) {
+    .app-container{
+        width: 350px;
+    }
+    .goal-container{
+        /* gap: .7rem; */
+    }
+   .goal-input{
+        font-size: 1rem;
+        padding-left: 1rem;
+}
+    
+}

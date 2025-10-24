@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(109, 101, 101);
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#quiz{
+    background-color: rgba(43, 145, 116, 1);
+    width: 50vw;
+    height: 60vh;
+    padding: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#submit{
+    width: 20vw;
+
+}
